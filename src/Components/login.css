@@ -1,0 +1,12 @@
+h1,
+h4,
+p {
+    text-align: center;
+  color: white;
+}
+.login {
+  width: 30vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
