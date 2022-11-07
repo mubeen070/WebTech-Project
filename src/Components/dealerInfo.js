@@ -1,7 +1,7 @@
 function DealerInfo() {
   return (
     <>
-    <style>{"body { background-color: #212F3C; }"}</style>
+    {/* <style>{"body { background-color: #212F3C; }"}</style> */}
       <div class="about-section">
         <h1>About Us Page</h1>
         <p>Some text about who we are and what we do.</p>

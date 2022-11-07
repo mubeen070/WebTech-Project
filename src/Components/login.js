@@ -1,5 +1,6 @@
 import "./login.css"
 import { useState } from "react";
+import BackgroundSlider from "./bgSlider";
 
 const Login = () => {
   const [email, setEmail] = useState("");
