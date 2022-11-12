@@ -1,10 +1,27 @@
-.home {
-  text-align: right;
-  height: 100vh;
+body{
+  height:50%;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+.container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 50%;
+  padding-top: 0 auto;
+  margin-top: 0 auto;
+}
+.main{
+  height: 100%;
   width: 100%;
 }
-
 .card{
-  border: 1px solid black;
+  width: 300px;
 }
-
+.img{
+width: 100px;
+  height: 100px;
+}

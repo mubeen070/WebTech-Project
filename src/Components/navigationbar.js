@@ -1,8 +1,8 @@
-import "./nav.css";
+
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav style={{height:'10vh'}}className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/home">
           Constructease
@@ -49,35 +49,6 @@ const NavBar = () => {
                   </Link>
                 </li>
               </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <span
-                className="nav-link dropdown-toggle"
-                href="/"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Utilities
-              </span>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <Link className="dropdown-item" to="/calc">
-                    Calculator
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/employ">
-                    Employees!
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact us
-              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/dealer">

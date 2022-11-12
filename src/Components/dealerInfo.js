@@ -1,65 +1,53 @@
-function DealerInfo() {
+import "./dealer.css";
+import Footer from "./footer";
+const DealerInfo = () => {
   return (
     <>
-    {/* <style>{"body { background-color: #212F3C; }"}</style> */}
-      <div class="about-section">
-        <h1>About Us Page</h1>
-        <p>Some text about who we are and what we do.</p>
+    <div className="main pt-4">
+      <div className="about-section">
+        <h1 className="text-align-center">About Us</h1>
+        <p>Constructease, As we create ease for construction!</p>
         <p>
-          Resize the browser window to see that this page is responsive by the
-          way.
+        410 Terry Ave N, Seattle 98109, WA. Get directions to Constructease Headquarters from Bing: 410 Terry Ave N, Seattle, WA.
         </p>
       </div>
 
-      <h2 className="text-center text-light">Our Team</h2>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-        <img src="/w3images/team1.jpg" alt="Jane" />
-            <div class="container">
-              <h2>Jane Doe</h2>
-              <p class="title">CEO & Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>jane@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
-            </div>
+      <h2>Our Team</h2>
+      <div className="container2 ms-2">
+        <div className="card text-center bg-dark">
+          <div className="card-header text-light">#1</div>
+          <div className="card-body">
+            <h5 className="card-title text-light fs-2">Jack Hifen</h5>
+            <img class="img" src="/pass1.png" alt="Card image cap" />
+            <p className="card-text">Head Analyst</p>
+            <p className="card-text">jack@noreply.com</p>
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team2.jpg" alt="Mike"/>
-            <div class="container">
-              <h2>Mike Ross</h2>
-              <p class="title">Art Director</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>mike@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
-            </div>
+        <div className="card text-center bg-dark">
+          <div className="card-header text-light">#2</div>
+          <div className="card-body">
+            <h5 className="card-title text-light fs-2">Phill Paul</h5>
+            <img class="img" src="/pass2.png" alt="Card image cap" />
+            <p className="card-text">Head Admin</p>
+            <p className="card-text">phillk@noreply.com</p>
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team3.jpg" alt="John"/>
-            <div class="container">
-              <h2>John Doe</h2>
-              <p class="title">Designer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>john@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
-            </div>
+        <div className="card text-center bg-dark">
+          <div className="card-header text-light">#3</div>
+          <div className="card-body">
+            <h5 className="card-title text-light fs-2">Annie</h5>
+            <img class="img" src="/pass3.png" alt="Card image cap" />
+            <p className="card-text">Senior Helper</p>
+            <p className="card-text">Annie@noreply.com</p>
           </div>
         </div>
       </div>
+      <Footer/>
+      </div>
     </>
   );
-}
+};
 
 export default DealerInfo;

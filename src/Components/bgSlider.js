@@ -22,7 +22,7 @@ const BackgroundSlider = () => {
     backgroundImage: `url(${imageSlide[current].url})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    height: "92.5vh",
+    height: "100%",
   };
   const gotoNext = (current) => {
     setCurrent(current);
