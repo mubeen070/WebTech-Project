@@ -1,10 +1,23 @@
-import "./login.css";
-import { useState } from "react";
-import BackgroundSlider from "./bgSlider";
+import "../Style/login.css";
+import React from "react";
+import { useState, useEffect, useRef } from "react";
 import Footer from "./footer";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
+  const goRed = useRef("");
+  const red = () => {
+    goRed.current.style.backgroundColor = 'red' 
+  }
+
+  const count = useRef(0);
+  useEffect(() => { 
+    count.current = count.current+1;
+    console.log(count.current)
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +39,12 @@ const Login = () => {
 
   return (
     <div className="main">
+      <div>
+        <h1>
+          <button onClick={()=>navigate("/signup")}>Go to Signup</button >
+        </h1>
+      <h2>Render Count: {count.current}</h2>
+      </div>
       <div className="login">
         <h1>Constructease</h1>
         <h1 className="d-flex justify-content-center"></h1>
@@ -40,7 +59,8 @@ const Login = () => {
               className="containers form-control"
               id="floatingPassword"
               placeholder="Email"
-            />
+              ref={goRed}
+            /> 
             <label for="floatingInput">Email</label>
           </div>
           <div className="form-floating mb-1">
@@ -63,6 +83,11 @@ const Login = () => {
             <button className="btn btn-outline-light" type="submit">
               Login
             </button>
+            
+            <button className="btn btn-outline-light" onClick={red}>
+              Go Red
+            </button>
+            
           </div>
         </form>
       </div>

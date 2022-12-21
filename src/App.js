@@ -1,24 +1,29 @@
 import React from "react";
 import Login from "./Components/login";
 import SignUp from "./Components/signupform";
-import NavBar from "./Components/navigationbar";
+import NavBar from "./Components/navbar";
 import Home from "./Components/home";
 import Material from "./Components/material";
 import DealerInfo from "./Components/dealerInfo";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Equipment from "./Components/equipment";
-import Footer from "./Components/footer";
-// import NavBarr from "./Components/nav";
+
 
 function App() {
   return (
     <>
       <style>
         {
-          "body {background-image: linear-gradient(to top,rgba(0, 0, 0, 0.748),#01223f); }"
+          "body {background-image: linear-gradient(to top,rgba(0, 0, 0, 0.748),#00294c); }"
         }
       </style>
       <div className="app">
+        
+{/* 
+          <Fifa/>
+          <MiddleTop/>
+          <Footer1/> */}
+
         <Router>
           <NavBar />
           <div className="main">
@@ -33,9 +38,6 @@ function App() {
           </div>
         </Router>
       </div>
-      {/* <div className="footer">
-        <Footer/>
-      </div> */}
     </>
   );
 }

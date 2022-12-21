@@ -1,4 +1,5 @@
-import "./home.css";
+import "../Style/home.css";
+import React from "react";
 import BackgroundSlider from "./bgSlider";
 import { Link } from "react-router-dom";
 import Footer from "./footer";

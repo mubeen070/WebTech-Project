@@ -1,7 +1,7 @@
-// import React from "react";
-import "./bgslide.css";
+import React, { useState } from "react";
+import "../Style/bgslide.css";
 import imageSlide from "./imgData";
-import { useState } from "react";
+// import { useContext } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 const BackgroundSlider = () => {

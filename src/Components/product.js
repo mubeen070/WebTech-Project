@@ -46,6 +46,38 @@ const Products = [
         price: "21",
         currency: '$',
         thumb: './tool6.png'
+     },
+    {
+        id:7,
+        pname: "Pick Axe",
+        desc:'High Quality pick axe, easy to use',
+        price: "21",
+        currency: '$',
+        thumb: './tool6.png'
+    },
+    {
+        id:8,
+        pname: "Pick Axe",
+        desc:'High Quality pick axe, easy to use',
+        price: "21",
+        currency: '$',
+        thumb: './tool6.png'
+    },
+    {
+        id:9,
+        pname: "Pick Axe",
+        desc:'High Quality pick axe, easy to use',
+        price: "21",
+        currency: '$',
+        thumb: './tool6.png'
+    },
+    {
+        id:10,
+        pname: "Pick Axe",
+        desc:'High Quality pick axe, easy to use',
+        price: "21",
+        currency: '$',
+        thumb: './tool6.png'
     }
 ]
 export default Products;

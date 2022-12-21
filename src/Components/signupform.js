@@ -1,8 +1,11 @@
-import "./signupform.css";
+import "../Style/signupform.css";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { MDBCheckbox } from "mdb-react-ui-kit";
 import Footer from "./footer";
 const SignUp = () => {
+  const navigate = useNavigate();
   const [firstN, setFirstN] = useState("");
   const [lastN, setLastN] = useState("");
   const [email, setEmail] = useState("");
@@ -46,6 +49,11 @@ const SignUp = () => {
 
   return (
     <div className="main">
+<div>
+        <h1>
+          
+        </h1>
+      </div>
       <div className="signupmain">
         <h1>Constructease</h1>
         <h4>Create Account</h4>
@@ -136,10 +144,10 @@ const SignUp = () => {
             <button className="btn btn-outline-light" type="submit">
               Sign Up
             </button>
+            <button className='btn btn-primary'onClick={()=>navigate(-1)}>Alread have an account?</button >
           </div>
         </form>
       </div>
-      <Footer />
     </div>
   );
 };

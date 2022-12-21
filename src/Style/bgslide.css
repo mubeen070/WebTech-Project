@@ -40,7 +40,7 @@ font: italic 1.2em "Fira Sans",;
     z-index: 998;
     top:0;
     left: 0;
-    background-image: linear-gradient(to top,rgba(255,0,0,0),#0275d8);
+    background-image: linear-gradient(to top,rgba(255,0,0,0),#00294c);
 }
 .blue-btn a{
     color: white;
