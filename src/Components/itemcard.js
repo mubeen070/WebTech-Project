@@ -1,6 +1,9 @@
 import React from "react";
 import "../Style/equipment.css";
+import { useCart } from "react-use-cart";
+
 const ItemCard = (props) => {
+  const { addItem } = useCart();
   return (
     <div className="cardd" key={props.id}>
       <div className="cardd-img">
@@ -16,6 +19,7 @@ const ItemCard = (props) => {
         <button
           className="btn"
           style={{ color: "white", border: "1px solid black" }}
+          onClick={() => addItem(props.item)}
         >
           Add to cart
         </button>

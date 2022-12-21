@@ -11,7 +11,7 @@
 
 }
 .card {
-  background-image: linear-gradient(to top,rgba(6, 6, 6, 0.748),#001d487d);
+  /* background-image: linear-gradient(to top,rgba(6, 6, 6, 0.748),#001d487d); */
   padding: 2rem;
   width: 24rem;
   border-radius: 50px;

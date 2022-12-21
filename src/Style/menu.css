@@ -1,10 +1,9 @@
 .row{
-    padding: 1rem;
-    padding-bottom: 15px;
+    padding-top: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     justify-content: center;
-    background-color: #00294c;
+    background-color: #19082d00;
 }
 
 .submenu{
@@ -46,12 +45,15 @@
 .listItems{
     font-size: .8rem;
     font-weight: 800;
-    color: rgb(180, 180, 59);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding: 1vh 2vw 1vh 2vw ;
     flex-wrap: nowrap;
     margin-left: 0px;
     
+}
+.listItems:hover{
+    transform: scale(1.1);
 }
 .dropdown-menu{
     display: none;

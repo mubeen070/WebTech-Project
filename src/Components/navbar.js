@@ -35,7 +35,9 @@ function Navbar() {
               </Link>
             </li>
             <li className="listItems">
+              <Link className="nav-link" to="/cart">
               <i class="bi bi-cart"></i>Cart
+                  </Link>
             </li>
             <li className="dropdown listItems">
               Register/Login

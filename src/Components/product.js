@@ -24,7 +24,7 @@ const Products = [
         thumb: './tool3.png'
     },
     {
-        id:4,
+        id:4,   
         pname: "Wrench",
         desc:'High Quality wrench, easy to use',
         price: "11",
@@ -73,6 +73,14 @@ const Products = [
     },
     {
         id:10,
+        pname: "Pick Axe",
+        desc:'High Quality pick axe, easy to use',
+        price: "21",
+        currency: '$',
+        thumb: './tool6.png'
+    },
+    {
+        id:11,
         pname: "Pick Axe",
         desc:'High Quality pick axe, easy to use',
         price: "21",

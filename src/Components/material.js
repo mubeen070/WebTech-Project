@@ -3,8 +3,8 @@ import Mats from "./mats";
 import "../Style/equipment.css";
 import ItemCard from "./itemcard";
 const MaterialRow = () => {
-  const listItems = Mats.map((item) => (
-    <ItemCard thumb={item.thumb} pname={item.pname} desc={item.desc} price={item.price} currency={item.currency}/>
+  const listItems = Mats.map((item,index) => (
+    <ItemCard thumb={item.thumb} pname={item.pname} desc={item.desc} price={item.price} currency={item.currency} key={index} item={item}/>
   ));
   return (
     <>
