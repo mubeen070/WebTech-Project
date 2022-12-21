@@ -1,22 +1,10 @@
 import React from "react";
 import Mats from "./mats";
 import "../Style/equipment.css";
+import ItemCard from "./itemcard";
 const MaterialRow = () => {
   const listItems = Mats.map((item) => (
-    <div className="cardd" key={item.id}>
-      <div className="cardd-img">
-        <img src={item.thumb} alt={item.pname}/>
-      </div>
-      <div className="cardd-header">
-        <h2>{item.pname}</h2>
-        <p>{item.desc}</p>
-        <p className="price">
-          {item.price}
-          <span>{item.currency}</span>
-        </p>
-        <div className="btn" style={{color:'black',backgroundColor:'#E6FFFD'}}>Add to cart</div>
-      </div>
-    </div>
+    <ItemCard thumb={item.thumb} pname={item.pname} desc={item.desc} price={item.price} currency={item.currency}/>
   ));
   return (
     <>

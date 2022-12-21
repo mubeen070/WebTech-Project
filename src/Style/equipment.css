@@ -75,6 +75,7 @@
     font-weight: 600;
     background-image: linear-gradient(to left, #443d57, #b393d3);
     color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     background-clip: text;
     -webkit-background-clip: text;
     background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
