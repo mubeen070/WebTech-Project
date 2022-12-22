@@ -19,11 +19,8 @@ function App() {
           
           <div className="main">
             <CartProvider>
-              <Routes>    
-                <Route exact path="">
-                  redirect("/home");
-                  </Route>           
-                <Route exact path="/home" element={<Home />} />
+              <Routes>               
+                <Route active exact path="/" element={<Home />} />
                 <Route exact path="/material" element={<Material />} />
                 <Route exact path="/equipment" element={<Equipment />} />
                 <Route exact path="/dealer" element={<DealerInfo />} />

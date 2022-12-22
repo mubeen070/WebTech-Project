@@ -18,7 +18,7 @@ function Navbar() {
           </div>
           <ul className="list">
             <li className="listItems">
-              <Link className="nav-link active" aria-current="page" to="/home">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
             </li>
