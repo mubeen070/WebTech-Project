@@ -1,6 +1,6 @@
 import React from "react";
 import Mats from "./mats";
-import "../Style/equipment.css";
+import "../Style/cards.css";
 import ItemCard from "./itemcard";
 const MaterialRow = () => {
   const listItems = Mats.map((item,index) => (

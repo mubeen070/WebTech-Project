@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { MDBCheckbox } from "mdb-react-ui-kit";
-import Footer from "./footer";
+
 const SignUp = () => {
   const navigate = useNavigate();
   const [firstN, setFirstN] = useState("");
@@ -49,11 +49,6 @@ const SignUp = () => {
 
   return (
     <div className="main">
-<div>
-        <h1>
-          
-        </h1>
-      </div>
       <div className="signupmain">
         <h1>Constructease</h1>
         <h4>Create Account</h4>
@@ -141,10 +136,15 @@ const SignUp = () => {
             />
           </div>
           <div className="button d-flex justify-content-center">
-            <button className="btn btn-outline-light" type="submit">
+            <button className="btn btn-outline-light ms-2" type="submit">
               Sign Up
             </button>
-            <button className='btn btn-primary'onClick={()=>navigate(-1)}>Alread have an account?</button >
+            <button
+              className="btn btn-primary ms-3 "
+              onClick={() => navigate(-1)}
+            >
+              Goto Login
+            </button>
           </div>
         </form>
       </div>

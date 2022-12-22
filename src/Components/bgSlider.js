@@ -22,7 +22,7 @@ const BackgroundSlider = () => {
     backgroundImage: `url(${imageSlide[current].url})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    height: "100%",
+    height: "100%"
   };
   const gotoNext = (current) => {
     setCurrent(current);
@@ -39,7 +39,7 @@ const BackgroundSlider = () => {
               </div>
               <div className="carousel-boullt">
                 {imageSlide.map((imageSlide, current) => (
-                  <span key={current} onClick={() => gotoNext(current)}></span>
+                  <span className="ms-2" key={current} onClick={() => gotoNext(current)}></span>
                 ))}
               </div>
               <div className="d-flex justify-content-center">

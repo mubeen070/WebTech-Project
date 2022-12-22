@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/equipment.css";
+import "../Style/cards.css";
 import Products from "./product";
 import ItemCard from "./itemcard";
 const EquipmentRow = () => {

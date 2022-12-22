@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/equipment.css";
+import "../Style/cards.css";
 import { useCart } from "react-use-cart";
 
 const ItemCard = (props) => {

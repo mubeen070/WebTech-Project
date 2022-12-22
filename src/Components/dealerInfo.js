@@ -43,7 +43,7 @@ const DealerInfo = () => {
         <div className="card text-center bg-dark">
           <div className="card-header text-light"  >#3</div>
           <div className="card-body">
-            <h5 className="card-title text-light fs-2" style={title}>Annie</h5>
+            <h5 className="card-title text-light fs-2" style={title}>Ans Shah</h5>
             <img class="img" src="/pass3.png" alt="Card image cap" />
             <p className="card-text">Senior Helper</p>
             <p className="card-text">Annie@noreply.com</p>
