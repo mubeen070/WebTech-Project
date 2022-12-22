@@ -45,7 +45,7 @@ const Cart = () => {
                     <td>{item.quantity}</td>
                     <td>
                       <button
-                        className="btn btn-info"
+                        className="btn btn-info btn-sm"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity - 1)
                         }
@@ -53,7 +53,7 @@ const Cart = () => {
                         -
                       </button>
                       <button
-                        className="btn btn-info ms-3"
+                        className="btn btn-info ms-3 btn-sm"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity + 1)
                         }
