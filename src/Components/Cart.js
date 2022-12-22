@@ -74,7 +74,7 @@ const Cart = () => {
           </table>
         </div>
         <div className="row ms-2">
-          <h2>Total Price: {cartTotal}$</h2>
+          <h4>Total Price: {cartTotal}$</h4>
         </div>
         <div className="row">
           <div className="col-auto ms-auto">
