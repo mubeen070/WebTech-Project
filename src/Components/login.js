@@ -1,17 +1,16 @@
 import "../Style/login.css";
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import Footer from "./footer";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const Login = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
-  const goRed = useRef("");
-  const red = () => {
-    goRed.current.style.backgroundColor = 'red' 
-  }
+  // const goRed = useRef("");
+  // const red = () => {
+  //   goRed.current.style.backgroundColor = 'red' 
+  // }
 
   const count = useRef(0);
   useEffect(() => { 
@@ -47,7 +46,6 @@ const Login = () => {
       </div> */}
       <div className="login">
         <h1>Constructease</h1>
-        <h1 className="d-flex justify-content-center"></h1>
         <h4 style={{ color: "black" }}>Login</h4>
         <form onSubmit={handleSubmit}>
           <div className="form-floating mb-1">
@@ -59,7 +57,7 @@ const Login = () => {
               className="containers form-control"
               id="floatingPassword"
               placeholder="Email"
-              ref={goRed}
+              // ref={goRed}
             /> 
             <label for="floatingInput">Email</label>
           </div>

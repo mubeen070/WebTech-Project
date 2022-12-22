@@ -13,5 +13,4 @@ const EquipmentRow = () => {
     </div>
   );
 };
-
 export default EquipmentRow;

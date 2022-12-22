@@ -24,7 +24,7 @@ const DealerInfo = () => {
           <div className="card-header text-light">#1</div>
           <div className="card-body">
             <h5 className="card-title text-light fs-2" style={title}>Phil</h5>
-            <img class="img" src="/pass1.png" alt="Card image cap" />
+            <img class="img" src="/pass1.png" alt="Card   cap" />
             <p className="card-text">Head Analyst</p>
             <p className="card-text">jack@noreply.com</p>
           </div>
@@ -34,7 +34,7 @@ const DealerInfo = () => {
           <div className="card-header text-light">#2</div>
           <div className="card-body">
             <h5 className="card-title text-light fs-2" style={title}>Phill Paul</h5>
-            <img class="img" src="/pass2.png" alt="Card image cap" />
+            <img class="img" src="/pass2.png" alt="Card   cap" />
             <p className="card-text">Head Admin</p>
             <p className="card-text">phillk@noreply.com</p>
           </div>
@@ -44,7 +44,7 @@ const DealerInfo = () => {
           <div className="card-header text-light"  >#3</div>
           <div className="card-body">
             <h5 className="card-title text-light fs-2" style={title}>Jack</h5>
-            <img class="img" src="/pass3.png" alt="Card image cap" />
+            <img class="img" src="/pass3.png" alt="Card   cap" />
             <p className="card-text">Senior Helper</p>
             <p className="card-text">Annie@noreply.com</p>
           </div>

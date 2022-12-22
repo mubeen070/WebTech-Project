@@ -39,6 +39,7 @@ const Cart = () => {
                       <img
                         src={item.thumb}
                         style={{ height: "6rem", width: "6rem" }}
+                        alt="pic"
                       />
                     </td>
                     <td>{item.pname}</td>

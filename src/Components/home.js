@@ -2,7 +2,7 @@ import "../Style/home.css";
 import React from "react";
 import BackgroundSlider from "./bgSlider";
 import { Link } from "react-router-dom";
-import Footer from "./footer";
+// import Footer from "./footer";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
           <div className="card-header text-light">Featured</div>
           <div className="card-body">
             <h5 className="card-title text-light fs-2">Material</h5>
-            <img class="img" src="/matIcon.png" alt="Card image cap" />
+            <img class="img" src="/matIcon.png" alt="Card cap" />
             <p className="card-text">
               With supporting text below as a natural lead-in to additional
               content.
@@ -32,7 +32,7 @@ const Home = () => {
             <div className="card-header text-light">Featured</div>
             <div className="card-body">
               <h5 className="card-title text-light fs-2">Equipment</h5>
-              <img className="img" src="/equip.png" alt="Card image cap" />
+              <img className="img" src="/equip.png" alt="Card cap" />
               <p className="card-text">
                 With supporting text below as a natural lead-in to additional
                 content.

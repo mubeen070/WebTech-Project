@@ -1,11 +1,11 @@
 import "../Style/signupform.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { MDBCheckbox } from "mdb-react-ui-kit";
 
 const SignUp = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [firstN, setFirstN] = useState("");
   const [lastN, setLastN] = useState("");
   const [email, setEmail] = useState("");
@@ -140,12 +140,12 @@ const SignUp = () => {
             <button className="btn btn-primary ms-2" type="submit">
               Sign Up
             </button>
-            <button
+            {/* <button
               className="btn btn-primary ms-3 "
               onClick={() => navigate(-1)}
             >
               Goto Login
-            </button>
+            </button> */}
           </div>
         </form>
       </div>
