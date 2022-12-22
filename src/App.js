@@ -9,11 +9,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Equipment from "./Components/equipment";
 import { CartProvider } from "react-use-cart";
 import Cart from "./Components/Cart";
-
+import "./Style/App.css";
 function App() {
   return (
     <>
-      <style>{"body {background-color:#00294c }"}</style>
+      {/* <style>{"body {background-color:#00294c }"}</style> */}
       <div className="app">
         <Router>
           <NavBar />

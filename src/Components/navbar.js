@@ -9,10 +9,11 @@ function Navbar() {
           className="row"
           style={{ marginRight: " calc(-0 * var(--bs-gutter-x))" }}
         >
-          <div className="row">
+          <div className="row1">
             <img
               src="https://www.designfreelogoonline.com/wp-content/uploads/2018/11/0001043-construction-Logo-Maker-01.png"
               style={{ width: "180px", height: "70px" }}
+              alt="logo"
             />
           </div>
           <ul className="list">

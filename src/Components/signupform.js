@@ -128,15 +128,16 @@ const SignUp = () => {
             />
             <label for="floatingPassword">Confirm Password</label>
           </div>
-          <div className="d5 d-flex justify-content-center">
+          <div className="d5 d-flex justify-content-center pb-4" style={{ color: "black" }}>
+            
             <MDBCheckbox
               className="flexcheck"
               id="flexCheckDefault"
               label="I agree all statements in Terms of service"
             />
           </div>
-          <div className="button d-flex justify-content-center">
-            <button className="btn btn-outline-light ms-2" type="submit">
+          <div className="d-flex justify-content-center">
+            <button className="btn btn-primary ms-2" type="submit">
               Sign Up
             </button>
             <button

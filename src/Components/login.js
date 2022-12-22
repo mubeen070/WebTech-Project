@@ -39,16 +39,16 @@ const Login = () => {
 
   return (
     <div className="main">
-      <div>
+      {/* <div>
         <h1>
           <button onClick={()=>navigate("/signup")}>Go to Signup</button >
         </h1>
       <h2>Render Count: {count.current}</h2>
-      </div>
+      </div> */}
       <div className="login">
         <h1>Constructease</h1>
         <h1 className="d-flex justify-content-center"></h1>
-        <h4>Login</h4>
+        <h4 style={{ color: "black" }}>Login</h4>
         <form onSubmit={handleSubmit}>
           <div className="form-floating mb-1">
             <input
@@ -72,21 +72,24 @@ const Login = () => {
               className="containers form-control"
               id="floatingPassword"
               placeholder="Password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required
             />
             <label for="floatingPassword">Password</label>
           </div>
 
-          <p className="forgot-password text-center mt-2">
+          <p className="forgot-password text-center mt-2"
+          style={{ color: "black" }}
+          >
             Forgot <a href="/">password?</a>
           </p>
           <div className="d-flex justify-content-center">
-            <button className="btn btn-outline-light" type="submit">
+            <button className="btn btn-primary" type="submit">
               Login
             </button>
             
-            <button className="btn btn-outline-light ms-2" onClick={red}>
+            {/* <button className="btn btn-danger ms-2" onClick={red}>
               Go Red
-            </button>
+            </button> */}
             
           </div>
         </form>

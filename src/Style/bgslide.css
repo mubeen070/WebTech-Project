@@ -1,7 +1,7 @@
 .container-style{
   position: relative;
     height: 90vh;
-    
+    margin: 3rem;
 }
 .description{
     width: 100%;
@@ -13,6 +13,7 @@
 }
 .text h1{
 font: italic 1.2em "Fira Sans",; 
+color:white;
     font-size:46px;
 }
 .text p{
@@ -41,7 +42,7 @@ font: italic 1.2em "Fira Sans",;
     z-index: 998;
     top:0;
     left: 0;
-    background-image: linear-gradient(to top,rgba(255,0,0,0),#00294c);
+    background-image: linear-gradient(to top,rgba(255,0,0,0),rgba(5, 0, 50, 0.895));
 }
 .blue-btn a{
     color: white;

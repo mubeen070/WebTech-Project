@@ -18,7 +18,7 @@ const ItemCard = (props) => {
         </p>
         <button
           className="btn"
-          style={{ color: "white", border: "1px solid black" }}
+          style={{color:'lightgray'}}
           onClick={() => addItem(props.item)}
         >
           Add to cart

@@ -41,11 +41,11 @@
     flex-wrap: wrap;
   }
   .cardd {
-    background-color: rgba(4, 108, 129, 0.497);
+    background-color: cyan;
     width: 25%;
-    height: 30%;
-    border-radius: 15px;
-    border: 1px solid black;
+    height: 40%;
+    border-radius: 30px;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +53,14 @@
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transform: scale(0.9);
+    background-image: linear-gradient(to top,rgba(5, 0, 50, 0.895),rgba(67, 0, 0, 0.649));
     transition: all 0.5s ease-in-out;
   }
   .cardd-img {
     margin-top: 5vw;
   }
   img {
-    height: 8rem;
+    height: 7rem;
     width: 7rem;
   }
   .cardd-header {
@@ -72,20 +73,17 @@
     margin: 30px 0;
   }
   h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     background-image: linear-gradient(to left, #443d57, #b393d3);
-    color: white;
+    color: black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     background-clip: text;
     -webkit-background-clip: text;
     background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
   }
-  h2 {
-    font-size: 30px;
-  }
   p {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     padding: 10px;
     color: whitesmoke;
@@ -102,7 +100,6 @@
     vertical-align: top;
   }
   .cardd:hover {
-    background-color: lightslategrey;
     transform: scale(1);
     cursor: pointer;
   }
@@ -118,4 +115,5 @@
    }
   .btn:hover{
     transform: scale(1.1);
+    background-color: black ;
   }

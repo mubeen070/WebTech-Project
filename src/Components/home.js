@@ -19,9 +19,13 @@ const Home = () => {
               With supporting text below as a natural lead-in to additional
               content.
             </p>
-            <Link to="/material" className="btn btn-dark">
-              Check!
-            </Link>
+            <button className="btn">
+
+<Link to="/material" className="btn btn-dark">
+  Check!
+</Link>
+</button>
+
           </div>
         </div>
           <div className="card text-center bg-dark ms-4">
@@ -33,9 +37,12 @@ const Home = () => {
                 With supporting text below as a natural lead-in to additional
                 content.
               </p>
+              <button className="btn">
+
               <Link to="/equipment" className="btn btn-dark">
                 Check!
               </Link>
+              </button>
             </div>
           </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useCart } from "react-use-cart";
-import "../Style/cart.css"
+import "../Style/cart.css";
 
 const Cart = () => {
   const {
@@ -23,10 +23,10 @@ const Cart = () => {
             Total Items:{totalUniqueItems} ^ ^ Total Quantity:{totalItems}
           </h4>
           <table
-            className="table m-0"
-            style={{ color: "white", padding: "2rem" }}
+            className="table center"
+            style={{ color: "black", width:"100%" }}
           >
-            <tbody>
+            <tbody >
               <th>Item</th>
               <th>Name</th>
               <th>Price</th>
@@ -34,7 +34,7 @@ const Cart = () => {
               <th>Operations</th>
               {items.map((item, index) => {
                 return (
-                  <tr>
+                  <tr style={{padding: '2rem'}}>
                     <td>
                       <img
                         src={item.thumb}
@@ -54,7 +54,7 @@ const Cart = () => {
                           updateItemQuantity(item.id, item.quantity - 1)
                         }
                       >
-                      -
+                        -
                       </button>
                       <button
                         className="button"
@@ -68,7 +68,7 @@ const Cart = () => {
                         className="button red"
                         onClick={() => removeItem(item.id)}
                       >
-                        Remove Item
+                        Remove
                       </button>
                     </td>
                   </tr>
@@ -77,16 +77,15 @@ const Cart = () => {
             </tbody>
           </table>
         </div>
-        <div className="row ms-2">
-          <h4>Total Price: {cartTotal}$</h4>
+        <div className="center ms-2" >
+          <h4 style={{color:'black'}}>Total Price: {cartTotal}$</h4>
         </div>
-        <div>
-          <div className="col-auto ms-auto">
-            <button className="btn btn-danger ms-2" onClick={() => emptyCart()}>
-              Clear cart
-            </button>
-            <button className="btn btn-primary ms-2">Buy</button>
-          </div>
+
+        <div className="center">
+          <button className="btn btn-danger ms-2" onClick={() => emptyCart()}>
+            Clear cart
+          </button>
+          <button className="btn btn-primary ms-2">Buy</button>
         </div>
       </div>
     </section>
