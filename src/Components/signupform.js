@@ -51,7 +51,7 @@ const SignUp = () => {
     <div className="main">
       <div className="signupmain">
         <h1>Constructease</h1>
-        <h4>Create Account</h4>
+        <h4 style={{color:'black'}}>Create Account</h4>
         <form onSubmit={handleSubmit}>
           <div className="form-floating mb-1">
             <input
@@ -136,7 +136,7 @@ const SignUp = () => {
               label="I agree all statements in Terms of service"
             />
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center pb-5">
             <button className="btn btn-primary ms-2" type="submit">
               Sign Up
             </button>

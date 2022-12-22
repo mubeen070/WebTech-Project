@@ -13,7 +13,19 @@
   width: 100%;
 }
 .card{
-  width: 300px;
+  background-color: cyan;
+  width: 25%;
+  height: 40%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  background-image: linear-gradient(to top,rgba(5, 0, 50, 0.895),rgba(67, 0, 0, 0.649));
+  transition: all 0.5s ease-in-out;
 }
 .img{
 width: 100px;
