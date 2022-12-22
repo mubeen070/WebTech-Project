@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "react-use-cart";
+import "../Style/cart.css"
 
 const Cart = () => {
   const {
@@ -15,13 +16,16 @@ const Cart = () => {
   if (isEmpty) return <h1 className="text-center">Empty Cart</h1>;
   return (
     <section className="py-4 container">
-    <h1>Shopping Cart</h1>
+      <h1>Shopping Cart</h1>
       <div className="justify-content-center">
         <div className="col-12 pt-3">
           <h4>
-            Total Items:{totalUniqueItems} => Total Quantity:{totalItems}
+            Total Items:{totalUniqueItems} ^ ^ Total Quantity:{totalItems}
           </h4>
-          <table className="table m-0" style={{ color: "white", padding: "2rem" }}>
+          <table
+            className="table m-0"
+            style={{ color: "white", padding: "2rem" }}
+          >
             <tbody>
               <th>Item</th>
               <th>Name</th>
@@ -45,15 +49,15 @@ const Cart = () => {
                     <td>{item.quantity}</td>
                     <td>
                       <button
-                        className="btn btn-info btn-sm"
+                        className="button"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity - 1)
                         }
                       >
-                        -
+                      -
                       </button>
                       <button
-                        className="btn btn-info ms-3 btn-sm"
+                        className="button"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity + 1)
                         }
@@ -61,7 +65,7 @@ const Cart = () => {
                         +
                       </button>
                       <button
-                        className="btn btn-danger ms-3"
+                        className="button red"
                         onClick={() => removeItem(item.id)}
                       >
                         Remove Item
@@ -76,7 +80,7 @@ const Cart = () => {
         <div className="row ms-2">
           <h4>Total Price: {cartTotal}$</h4>
         </div>
-        <div className="row">
+        <div>
           <div className="col-auto ms-auto">
             <button className="btn btn-danger ms-2" onClick={() => emptyCart()}>
               Clear cart

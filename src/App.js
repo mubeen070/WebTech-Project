@@ -19,8 +19,7 @@ function App() {
           <NavBar />
           <div className="main">
             <CartProvider>
-              <Routes>
-                
+              <Routes>               
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/material" element={<Material />} />
                 <Route exact path="/equipment" element={<Equipment />} />

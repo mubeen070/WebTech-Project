@@ -84,14 +84,13 @@ const Login = () => {
               Login
             </button>
             
-            <button className="btn btn-outline-light" onClick={red}>
+            <button className="btn btn-outline-light ms-2" onClick={red}>
               Go Red
             </button>
             
           </div>
         </form>
       </div>
-    <Footer/>
     </div>
   );
 };
