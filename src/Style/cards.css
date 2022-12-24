@@ -1,5 +1,5 @@
 
-.container1 {
+.container{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,12 +35,11 @@
     width: 80%;
     height: 10%;
     margin: 50px auto;
-    padding: 10px 0 0;
     box-sizing: border-box;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .cardd {
+  .card {
     background-color: cyan;
     width: 25%;
     height: 40%;
@@ -72,18 +71,8 @@
     color: white;
     margin: 30px 0;
   }
-  /* h1{
-    font-size: 4rem;
-    font-weight: 600;
-    background-image: linear-gradient(to left, #443d57, #b393d3);
-    color: black;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
-  } */
   p {
-    font-size: 10px;
+    font-size: 1rem;
     text-align: center;
     padding: 10px;
     color: whitesmoke;

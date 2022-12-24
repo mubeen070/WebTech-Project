@@ -13,13 +13,13 @@ const Cart = () => {
     removeItem,
     emptyCart,
   } = useCart();
-  if (isEmpty) return <h1 className="text-center">Empty Cart</h1>;
+  if (isEmpty) return <h1 className="text-center text-dark">Empty Cart</h1>;
   return (
     <section className="py-4 container">
-      <h1>Shopping Cart</h1>
+      <h1 className="text-dark">Shopping Cart</h1>
       <div className="justify-content-center">
         <div className="col-12 pt-3">
-          <h4>
+          <h4 className="text-dark">
             Total Items:{totalUniqueItems} ^ ^ Total Quantity:{totalItems}
           </h4>
           <table
