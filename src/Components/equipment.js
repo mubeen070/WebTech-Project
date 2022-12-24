@@ -1,5 +1,4 @@
 import React from "react";
-import "../Style/cards.css";
 import Products from "./product";
 import ItemCard from "./itemcard";
 const EquipmentRow = () => {
@@ -8,7 +7,7 @@ const EquipmentRow = () => {
   ));
   return (
     <div className="container1">
-      <h1>Equipments</h1>
+      <h1 className="text-dark">Equipments</h1>
       <div className="main-content">{listItems}</div>
     </div>
   );

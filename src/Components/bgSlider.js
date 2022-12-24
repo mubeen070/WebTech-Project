@@ -43,8 +43,8 @@ const BackgroundSlider = () => {
                 ))}
               </div>
               <div className="d-flex justify-content-center">
-                <div className="blue-btn">
-                  <Link class="first-link" to="/signup">
+                <div className="btn btn-dark mx-3" style={{textDecoration:"none", textAlign:"center",marginTop:"20px",color:"white"}}>
+                  <Link to="/signup">
                     Get Started
                   </Link>
                 </div>

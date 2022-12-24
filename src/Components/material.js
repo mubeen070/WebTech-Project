@@ -1,6 +1,5 @@
 import React from "react";
 import Mats from "./mats";
-import "../Style/cards.css";
 import ItemCard from "./itemcard";
 const MaterialRow = () => {
   const listItems = Mats.map((item,index) => (
@@ -9,7 +8,7 @@ const MaterialRow = () => {
   return (
     <>
       <div className="container1">
-      <h1>Materials</h1>
+      <h1 className="text-dark">Materials</h1>
         <div className="main-content">{listItems}</div>
       </div>
     </>
