@@ -29,7 +29,7 @@ const BackgroundSlider = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container-style">
         <div style={bgImgStyle}>
           <div className="transparent-background">
             <div className="description">
