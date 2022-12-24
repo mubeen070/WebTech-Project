@@ -4,7 +4,7 @@ import "../Style/cards.css"
 import ItemCard from "./itemcard";
 const EquipmentRow = () => {
   const listItems = Products.map((item, index) => (
-    <div className="col-4">
+    <div className="col-lg-4 col-sm-12" style={{padding:"0", margin:"0"}}>
       <ItemCard
         thumb={item.thumb}
         pname={item.pname}
@@ -20,7 +20,7 @@ const EquipmentRow = () => {
     <div className="container">
       <h1 className="text-dark">Equipments</h1>
 
-      <div className="row">{listItems}</div>
+      <div className="row" style={{padding:"0", margin:"0"}}>{listItems}</div>
     </div>
   );
 };
