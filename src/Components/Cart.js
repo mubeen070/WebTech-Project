@@ -15,16 +15,16 @@ const Cart = () => {
   } = useCart();
   if (isEmpty) return <h1 className="text-center text-dark">Empty Cart</h1>;
   return (
-    <section className="py-4 container">
+    <section className="container">
       <h1 className="text-dark">Shopping Cart</h1>
-      <div className="justify-content-center">
-        <div className="col-12 pt-3">
+      <div className="row justify-content-center align-items-center">
+        <div className="col-lg-12 col-md-8 col-sm-2 pt-3">
           <h4 className="text-dark">
-            Total Items:{totalUniqueItems} ^ ^ Total Quantity:{totalItems}
+            Total Items:{totalUniqueItems} ^  Total Quantity:{totalItems}
           </h4>
           <table
             className="table center"
-            style={{ color: "black", width:"100%" }}
+            style={{ color: "black" }}
           >
             <tbody >
               <th>Item</th>
@@ -34,7 +34,7 @@ const Cart = () => {
               <th>Operations</th>
               {items.map((item, index) => {
                 return (
-                  <tr style={{padding: '2rem'}}>
+                  <tr style={{padding: '3rem'}}>
                     <td>
                       <img
                         src={item.thumb}
@@ -50,7 +50,7 @@ const Cart = () => {
                     <td>{item.quantity}</td>
                     <td>
                       <button
-                        className="button"
+                        className="buttons"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity - 1)
                         }
@@ -58,7 +58,7 @@ const Cart = () => {
                         -
                       </button>
                       <button
-                        className="button"
+                        className="buttons"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity + 1)
                         }
@@ -66,7 +66,7 @@ const Cart = () => {
                         +
                       </button>
                       <button
-                        className="button red"
+                        className="buttons red"
                         onClick={() => removeItem(item.id)}
                       >
                         Remove

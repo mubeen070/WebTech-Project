@@ -48,106 +48,110 @@ const SignUp = () => {
   };
 
   return (
-    <div className="main">
-      <div className="signupmain">
-        <h1>Constructease</h1>
-        <h4 style={{color:'black'}}>Create Account</h4>
-        <form onSubmit={handleSubmit}>
-          <div className="form-floating mb-1">
-            <input
-              type="text"
-              onChange={handleChange}
-              value={firstN}
-              name="fname"
-              class="containers form-control"
-              id="floatingInput"
-              placeholder="First Name"
-            />
-            <label for="floatingInput">First Name</label>
-          </div>
-          <div className="form-floating mb-1">
-            <input
-              type="text"
-              onChange={handleChange}
-              value={lastN}
-              name="lname"
-              class="containers form-control"
-              id="floatingInput"
-              placeholder="Last Name"
-              required
-            />
-            <label for="floatingInput">Last Name</label>
-          </div>
+    <div className="container">
+      <div className="row justify-content-center align-items-center" >
+        <h1 style={{ color: "black" }}>Constructease</h1>
+        <h4 style={{ color: "black" }}>Create Account</h4>
+        <div className="col-lg-5 col-md-6 col-sm-3">
+          <form onSubmit={handleSubmit}>
+            <div className="form-floating mb-1">
+              <input
+                type="text"
+                onChange={handleChange}
+                value={firstN}
+                name="fname"
+                class="containers form-control"
+                id="floatingInput"
+                placeholder="First Name"
+              />
+              <label for="floatingInput">First Name</label>
+            </div>
+            <div className="form-floating mb-1">
+              <input
+                type="text"
+                onChange={handleChange}
+                value={lastN}
+                name="lname"
+                class="containers form-control"
+                id="floatingInput"
+                placeholder="Last Name"
+                required
+              />
+              <label for="floatingInput">Last Name</label>
+            </div>
 
-          <div className="form-floating mb-1">
-            <input
-              type="email"
-              onChange={handleChange}
-              value={email}
-              name="email"
-              className="containers form-control"
-              id="floatingInput"
-              placeholder="Last Name"
-              required
-            />
-            <label for="floatingInput">Email</label>
-          </div>
-          <div className="form-floating mb-1">
-            <input
-              type="email"
-              onChange={handleChange}
-              value={confirmE}
-              name="cEmail"
-              className="containers form-control"
-              id="floatingPassword"
-              placeholder="Email"
-            />
-            <label for="floatingInput">Confirm Email</label>
-          </div>
-          <div className="form-floating mb-1">
-            <input
-              type="password"
-              onChange={handleChange}
-              value={password}
-              name="password"
-              className="containers form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Password</label>
-          </div>
-          <div className="form-floating mb-1">
-            <input
-              type="password"
-              onChange={handleChange}
-              value={passwordC}
-              name="cPassword"
-              className="containers form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Confirm Password</label>
-          </div>
-          <div className="d5 d-flex justify-content-center pb-4" style={{ color: "black" }}>
-            
-            <MDBCheckbox
-              className="flexcheck"
-              id="flexCheckDefault"
-              label="I agree all statements in Terms of service"
-            />
-          </div>
-          <div className="d-flex justify-content-center pb-5">
-            <button className="btn btn-primary ms-2" type="submit">
-              Sign Up
-            </button>
-            {/* <button
+            <div className="form-floating mb-1">
+              <input
+                type="email"
+                onChange={handleChange}
+                value={email}
+                name="email"
+                className="containers form-control"
+                id="floatingInput"
+                placeholder="Last Name"
+                required
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+            <div className="form-floating mb-1">
+              <input
+                type="email"
+                onChange={handleChange}
+                value={confirmE}
+                name="cEmail"
+                className="containers form-control"
+                id="floatingPassword"
+                placeholder="Email"
+              />
+              <label for="floatingInput">Confirm Email</label>
+            </div>
+            <div className="form-floating mb-1">
+              <input
+                type="password"
+                onChange={handleChange}
+                value={password}
+                name="password"
+                className="containers form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div className="form-floating mb-1">
+              <input
+                type="password"
+                onChange={handleChange}
+                value={passwordC}
+                name="cPassword"
+                className="containers form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+            <div
+              className="d5 d-flex justify-content-center pb-4"
+              style={{ color: "black" }}
+            >
+              <MDBCheckbox
+                className="flexcheck"
+                id="flexCheckDefault"
+                label="I agree all statements in Terms of service"
+              />
+            </div>
+            <div className="d-flex justify-content-center pb-5">
+              <button className="btn btn-primary ms-2" type="submit">
+                Sign Up
+              </button>
+              {/* <button
               className="btn btn-primary ms-3 "
               onClick={() => navigate(-1)}
             >
               Goto Login
             </button> */}
-          </div>
-        </form>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
